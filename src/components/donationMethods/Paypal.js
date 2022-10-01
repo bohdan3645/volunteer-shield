@@ -1,6 +1,5 @@
 import { Paper, Typography, Box, Button } from '@mui/material';
 import { GrPaypal } from 'react-icons/gr';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Paypal(props) {
     return (

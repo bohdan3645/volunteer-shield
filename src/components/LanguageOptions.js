@@ -1,7 +1,6 @@
 import { Fab, Box, Typography } from '@mui/material';
 
 function LanguageOptions(props) {
-    const lang = props.lang ? 'ENG' : 'UA';
 
     const handleClick = () => {
         props.switchLanguage();
@@ -18,10 +17,10 @@ function LanguageOptions(props) {
                         transform: 'translate(-50%, -50%)',
                     }}
                 >
-                    <Typography variant='h6'>{lang}</Typography>
+                    <Typography variant='h6'>{props.lang.toUpperCase()}</Typography>
                 </Box>
             </Fab>
-      </Box>
+        </Box>
     );
 }
 
