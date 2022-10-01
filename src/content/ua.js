@@ -35,10 +35,14 @@ const ua = {
     },
     financial_help: {
         title: 'Для всіх бажаючих допомогти фінансово добавляєм реквізити:',
-        copy_button: { copy: 'Копіювати', copied: 'Скопійовано!'},
+        copy_button: { copy: 'Копіювати', copied: 'Скопійовано!' },
         bank_card_num: {
             title: 'Номер карти для пожертв',
             card_num: '5375 4141 1955 5745'
+        },
+        paypal: {
+            title: 'PayPal',
+            button_title: 'Підтримати',
         },
         bank_account_details: [
             {

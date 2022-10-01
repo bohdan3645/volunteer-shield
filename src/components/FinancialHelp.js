@@ -4,6 +4,7 @@ import { Typography, Container, Box, Divider } from '@mui/material';
 import Swift from './donationMethods/Swift';
 import CardNum from './donationMethods/CardNum';
 import Crypto from './donationMethods/Crypto';
+import Paypal from './donationMethods/Paypal';
 
 function FinancialHelp(props) {
 
@@ -11,7 +12,7 @@ function FinancialHelp(props) {
         <>
             <Box sx={{ bgcolor: '#dff2fa' }}>
                 <Container maxWidth='lg' sx={{ pt: 13 }}>
-                    <Typography 
+                    <Typography
                         variant='h2'
                         textAlign='center'
                     >
@@ -22,13 +23,19 @@ function FinancialHelp(props) {
                             <CardNum content={props.content} />
                         </Box>
                     </Container>
-                        <Divider sx={{ borderColor: '#000' }} />
+                    <Divider sx={{ borderColor: '#000' }} />
+                    <Container maxWidth='md' sx={{ py: 4 }}>
+                        <Box sx={{ py: 5 }}>
+                            <Paypal content={props.content} />
+                        </Box>
+                    </Container>
+                    <Divider sx={{ borderColor: '#000' }} />
                     <Container maxWidth='md' sx={{ py: 4 }}>
                         <Box sx={{ py: 5 }}>
                             <Swift content={props.content} />
                         </Box>
                     </Container>
-                        <Divider sx={{ borderColor: '#000' }} />
+                    <Divider sx={{ borderColor: '#000' }} />
                     <Container maxWidth='md' sx={{ py: 4 }}>
                         <Box sx={{ py: 5 }}>
                             <Crypto content={props.content} />

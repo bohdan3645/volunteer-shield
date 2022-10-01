@@ -35,10 +35,14 @@ const eng = {
     },
     financial_help: {
         title: 'For all those wishing to help financially, we add details to the multi-currency account:',
-        copy_button: { copy: 'Copy', copied: 'Copied!'},
+        copy_button: { copy: 'Copy', copied: 'Copied!' },
         bank_card_num: {
             title: 'Card number for donations',
             card_num: '5375 4141 1955 5745'
+        },
+        paypal: {
+            title: 'PayPal',
+            button_title: 'Donate',
         },
         bank_account_details: [
             {
